@@ -1,24 +1,14 @@
 #landingTitle {
-  color: #ffffff;
-  font-size: large;
+  color: #ffffffd3;
+  font-size: 80px;
   font-weight: bold;
   font-family: Arial, sans-serif;
   text-align: center;
   position: relative; /* ensure it sits above the backdrop */
   z-index: 1;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+  text-shadow: 0 5px 10px rgba(0,0,0,0.6);
 }
 
-#gradient1 {
-  height: 200px;
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom right, red, yellow);
-  position: absolute;
-  z-index: -1;
-}
-
-/* Full-page soft gradient backdrop behind text */
-/* Uses a fixed pseudo-element so it sits behind all content but above the page background. */
 body {
   position: relative;
   min-height: 100vh;
@@ -32,12 +22,25 @@ body::before {
   pointer-events: none; /* let clicks pass through */
   /* layered gradients for depth; adjust colors/opacity to taste */
   background-image:
-    radial-gradient(circle at 10% 20%, rgba(255,200,150,0.14), transparent 18%),
-    radial-gradient(circle at 90% 80%, rgba(120,200,255,0.12), transparent 20%),
-    linear-gradient(120deg, rgba(32,58,147,0.35), rgba(123,58,164,0.35));
+    linear-gradient(120deg, rgba(252, 109, 240, 0.781), rgba(75, 153, 255, 0.836));
   background-size: cover;
   filter: blur(28px);
   transform: scale(1.03);
 }
 
-/* If you prefer the gradient only behind a specific section, add a container and apply similar styles to that container instead. */
+.header  {
+    color: #ffffffd3;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  position: relative; /* ensure it sits above the backdrop */
+  z-index: 1;
+  text-shadow: 0 5px 10px rgba(0,0,0,0.6);
+}
+
+.text {
+  position: relative;
+  z-index: 1;
+  margin-left: 150px;
+}
