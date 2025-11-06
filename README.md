@@ -3,9 +3,7 @@
 - I also wanted to experiment with Github Pages!
 
 # Licence
-- This is under...
-- SPDX-License-Identifier: CC-BY-NC-4.0
-
+- This is under CC-BY-NC-4.0
 
 # Where to find:
 - Visit https://moffer1234.github.io/Portfolio-Website/
