@@ -35,9 +35,7 @@ body {
     margin-top: 1rem;
 }
 
-/* Optional subtle overlay for extra depth (kept transparent by default). */
-/* Remove or tune if you prefer a flatter look. */
-/* body::before {
+body::before {
     content: '';
     position: fixed;
     top: 0;
@@ -47,4 +45,4 @@ body {
     background: linear-gradient(135deg, rgba(230,230,250,0.06), rgba(184,166,217,0.06));
     pointer-events: none;
     z-index: -1;
-} */
+} 
