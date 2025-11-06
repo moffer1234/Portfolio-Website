@@ -15,7 +15,7 @@ body {
     min-height: 100vh;
     font-family: 'Stack', Arial, sans-serif; /* 'Stack' will be loaded from Fontshare in the HTML */
     /* Diagonal gradient from top-left (start) to bottom-right (end) */
-    background: linear-gradient(to bottom right, #26dfd0 0%, #6939db 50%, #e757d4 100%);
+    background: linear-gradient(to bottom right, #92cdf5 0%, #ffa8e2 100%);
     background-attachment: fixed;
      background-repeat: no-repeat;
 }
