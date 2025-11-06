@@ -5,7 +5,7 @@ html, body {
 }
 
 html {
-    background: linear-gradient(135deg, #E6E6FA 0%, #D7C7EE 50%, #B8A6D9 100%);
+    background: linear-gradient(135deg, hsl(209, 97%, 71%) 0%, #d64dff 100%);
     /* preserve gradient when page is short */
     background-attachment: fixed;
 }
@@ -15,7 +15,7 @@ body {
     padding: 0;
     min-height: 100vh;
     font-family: 'Stack', Arial, sans-serif; /* 'Stack' will be loaded from Fontshare in the HTML */
-     background: linear-gradient(135deg, #E6E6FA 0%, #D7C7EE 50%, #B8A6D9 100%);
+     background: linear-gradient(135deg, hsl(209, 97%, 71%) 0%, #d64dff 100%);
      background-attachment: fixed;
      background-repeat: no-repeat;
 }
