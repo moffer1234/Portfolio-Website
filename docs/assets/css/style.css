@@ -1,13 +1,21 @@
 
-@import "{{ site.theme }}";
+/* Put the gradient on the root element (html) so it always sits behind the page */
+html, body {
+    height: 100%;
+}
 
+html {
+    background: linear-gradient(135deg, #E6E6FA 0%, #D7C7EE 50%, #B8A6D9 100%);
+    /* preserve gradient when page is short */
+    background-attachment: fixed;
+}
 
 body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    font-family: 'Stack', Arial, sans-serif;
-    background: linear-gradient(135deg, #E6E6FA, #B8A6D9);
+    font-family: 'Stack', Arial, sans-serif; /* 'Stack' will be loaded from Fontshare in the HTML */
+    background: transparent; /* allow html gradient to show through */
 }
 
 #landingTitle {
@@ -25,14 +33,16 @@ body {
     margin-top: 1rem;
 }
 
-body::before {
+/* Optional subtle overlay for extra depth (kept transparent by default). */
+/* Remove or tune if you prefer a flatter look. */
+/* body::before {
     content: '';
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(230,230,250,0.2), rgba(184,166,217,0.2));
+    background: linear-gradient(135deg, rgba(230,230,250,0.06), rgba(184,166,217,0.06));
     pointer-events: none;
     z-index: -1;
-}
+} */
