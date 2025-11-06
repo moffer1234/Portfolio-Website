@@ -1,31 +1,48 @@
-
-/* Put the gradient on the root element (html) so it always sits behind the page */
+/* Ensure gradient fills the entire screen and sits behind everything */
 html, body {
     height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrollbars caused by pseudo-element */
+    font-family: 'Stack', Arial, sans-serif;
+    position: relative;
 }
 
+/* Remove any default HTML background */
 html {
-    /* Clear any root background so body gradient is visible and not double-stacked */
     background: none;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    font-family: 'Stack', Arial, sans-serif; /* 'Stack' will be loaded from Fontshare in the HTML */
-    /* Diagonal gradient from top-left (start) to bottom-right (end) */
-    background: linear-gradient(to bottom right, #7ac1fc 0%, #ffa8e2 100%);
-    background-attachment: fixed;
-     background-repeat: no-repeat;
+/* Use a pseudo-element for the gradient with a blurred overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: linear-gradient(135deg,
+        #f0fffd 0%,
+        #e6fbf8 30%,
+        #f7eef6 70%,
+        #fff7fb 100%
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(25px); /* Apply Gaussian-style blur */
+    transform: scale(1.1); /* Slightly enlarge to hide blur edges */
 }
 
+/* Content styling */
 #landingTitle {
     color: #2C2C2C;
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
     margin-top: 2rem;
+    position: relative;
+    z-index: 1; /* Keep text above the blur */
 }
 
 .header.text {
@@ -33,16 +50,6 @@ body {
     font-size: 1.5rem;
     text-align: center;
     margin-top: 1rem;
+    position: relative;
+    z-index: 1;
 }
-
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(230,230,250,0.06), rgba(184,166,217,0.06));
-    pointer-events: none;
-    z-index: -1;
-} 
