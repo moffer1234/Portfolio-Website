@@ -53,3 +53,8 @@ body::before {
     position: relative;
     z-index: 1;
 }
+
+#titlePic {
+    width: 200px;
+    height: 100px;
+}
