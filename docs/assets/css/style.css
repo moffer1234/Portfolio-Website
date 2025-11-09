@@ -23,10 +23,10 @@ body::before {
     height: 100vh;
     z-index: -1;
     background: linear-gradient(135deg,
-        #f0fffd 0%,
-        #e6fbf8 30%,
-        #f7eef6 70%,
-        #fff7fb 100%
+        #c1fff7 0%,
+        #befff5 30%,
+        #ffb3f6 70%,
+        #faafd5 100%
     );
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,9 +54,7 @@ body::before {
     z-index: 1;
 }
 
-#titlePic {
-    width: 200px;
-    height: 100px;
+img {
     border-radius: 50%;
     align-content: center;
 }
