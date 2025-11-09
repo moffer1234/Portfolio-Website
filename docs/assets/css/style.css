@@ -55,6 +55,8 @@ body::before {
 }
 
 img {
+    max-width: 15%;
+    max-height: 15%;
     border-radius: 50%;
     align-content: center;
 }
