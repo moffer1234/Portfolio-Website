@@ -45,7 +45,7 @@ body::before {
     z-index: 1; /* Keep text above the blur */
 }
 
-.header.text {
+.header .text {
     color: #3A3A3A;
     font-size: 1.5rem;
     text-align: center;
@@ -57,4 +57,6 @@ body::before {
 #titlePic {
     width: 200px;
     height: 100px;
+    border-radius: 50%;
+    align-content: center;
 }
