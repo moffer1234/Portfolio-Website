@@ -59,8 +59,5 @@ body::before {
     margin: 2rem auto; /* centers horizontally */
     max-width: 40%;
     max-height: 40%;
-    border-style: solid;
-    border-radius: 50%;
-    border-weight: 5px;
-    border-color: #faafd5;
+
 }
